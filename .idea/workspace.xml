@@ -50,13 +50,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="decorators.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/twitter/decorators.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="0" selection-start="75" selection-end="75" vertical-scroll-proportion="0.078809105">
+              <folding>
+                <element signature="e#0#44#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/twitter/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="182" column="84" selection-start="6890" selection-end="6890" vertical-scroll-proportion="-0.43010753">
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
+            <state line="208" column="28" selection-start="8157" selection-end="8157" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="0003_auto__add_field_tweet_added_at.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/twitter/migrations/0003_auto__add_field_tweet_added_at.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -64,10 +82,8 @@
       <file leaf-file-name="view_tweet.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project/templates/twitter/view_tweet.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="450" selection-end="450" vertical-scroll-proportion="-8.125">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="3" column="22" selection-start="82" selection-end="82" vertical-scroll-proportion="-1.875">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -117,24 +133,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="0001_initial.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/twitter/migrations/0001_initial.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="options.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Envs/env1/local/lib/python2.7/site-packages/django/contrib/admin/options.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="366" column="8" selection-start="15108" selection-end="15108" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -145,7 +143,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/project/templates/twitter/login_form.html" />
         <option value="$PROJECT_DIR$/project/templates/twitter/profile.html" />
         <option value="$PROJECT_DIR$/project/templates/twitter/home.html" />
         <option value="$PROJECT_DIR$/project/templates/twitter/connect.html" />
@@ -158,9 +155,10 @@
         <option value="$PROJECT_DIR$/project/settings.py" />
         <option value="$PROJECT_DIR$/twitter/admin.py" />
         <option value="$PROJECT_DIR$/twitter/migrations/0002_new.py" />
+        <option value="$PROJECT_DIR$/twitter/views.py" />
         <option value="$PROJECT_DIR$/twitter/models.py" />
         <option value="$PROJECT_DIR$/project/templates/twitter/view_tweet.html" />
-        <option value="$PROJECT_DIR$/twitter/views.py" />
+        <option value="$PROJECT_DIR$/twitter/decorators.py" />
       </list>
     </option>
   </component>
@@ -294,12 +292,13 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="preferences.sourceCode.Python" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="preferences.sourceCode.Python" />
     <property name="last_opened_file_path" value="$USER_HOME$/Envs/env1/bin/python2.7" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -402,6 +401,12 @@
         <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
     <configuration default="false" name="project" type="Python.DjangoServer" factoryName="Django server">
@@ -541,16 +546,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/project/templates/twitter/confirm_reject.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="7" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Envs/env1/local/lib/python2.7/site-packages/django/db/models/aggregates.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="6" selection-start="1848" selection-end="1848" vertical-scroll-proportion="0.39579684" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project/local_settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="20" selection-start="80" selection-end="80" vertical-scroll-proportion="0.0">
@@ -585,13 +580,6 @@
     <entry file="file://$PROJECT_DIR$/twitter/migrations/0001_initial.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/twitter/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="38" selection-start="853" selection-end="853" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -633,18 +621,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/project/templates/twitter/view_tweet.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="450" selection-end="450" vertical-scroll-proportion="-8.125">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="3" column="22" selection-start="82" selection-end="82" vertical-scroll-proportion="-1.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twitter/migrations/0003_auto__add_field_tweet_added_at.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/twitter/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="182" column="84" selection-start="6890" selection-end="6890" vertical-scroll-proportion="-0.43010753">
+        <state line="208" column="28" selection-start="8157" selection-end="8157" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twitter/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="38" selection-start="853" selection-end="853" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twitter/decorators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="75" selection-end="75" vertical-scroll-proportion="0.078809105">
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#44#0" expanded="true" />
           </folding>
         </state>
       </provider>

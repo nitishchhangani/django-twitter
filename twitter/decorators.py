@@ -1,6 +1,7 @@
 from django.http import HttpResponseRedirect
 from project import settings
 
+
 def logout_required(view):
     def f(request, *args, **kwargs):
         if request.user.is_anonymous():
