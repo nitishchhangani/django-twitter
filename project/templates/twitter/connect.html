@@ -1,0 +1,38 @@
+<html>
+	<body>
+
+        <a href={% url 'home' %}>Home</a>
+        {% if connected_list %}
+            <h2>Connected</h2>
+            <ul>
+                {% for users in connected_list %}
+    	    	    <li>{{ users }} <a href={% url 'disconnectfrom' users %}>Disconnect</a></li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+        {% if pending_list %}
+            <h2>Request Pending</h2>
+            <ul>
+                {% for users in pending_list %}
+    	    	    <li>{{ users }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+        {% if accept_list %}
+            <h2>Acceptance Pending (please check your mail)</h2>
+            <ul>
+                {% for users in accept_list %}
+    	    	    <li>{{ users }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+        {% if disconnected_list %}
+            <h2>Disconnected</h2>
+            <ul>
+                {% for users in disconnected_list %}
+    	    	    <li>{{ users }} <a href={% url 'connectto' users %}>Connect</a></li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+	</body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <a href={% url 'home' %}>Home</a>
+        <h1>Users</h1>
+        <ul>
+            {% for user in user_list %}
+    	    	<li><a href={% url 'viewtweet' user %}>{{ user }}</a></li>
+   			{% endfor %}
+        </ul>
+        <h1>Tweets</h1>
+        {% if tweet_list %}
+    		{% for tweet in tweet_list %}
+    	    	    <div style="border: solid 1px; width: 300px; margin: 10px;background-color: {% cycle '#E6E6FA' '#FFB6C1' %}">
+                    <p>{{ tweet.user.first_name }} {{ tweet.user.last_name }} {{ tweet.added_at }}</p>
+                    <p>{{ tweet.message }}</p>
+                </div>
+   			{% endfor %}
+		{% else %}
+    		<p>No tweets are available.</p>
+		{% endif %}
+    </body>
+</html>

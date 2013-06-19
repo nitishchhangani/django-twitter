@@ -1,0 +1,19 @@
+<html>
+	<body>
+        <a href={% url 'home' %}>Home</a>
+        <h1>Users</h1>
+        <ul>
+            {% for user in user_list %}
+    	    	<li><a href={% url 'profile' user %}>{{ user }}</a></li>
+   			{% endfor %}
+        </ul>
+        <h1>Profile</h1>
+        {% if user == current_user %}
+            <a href={% url 'edit' current_user %}>edit</a>
+        {% endif %}
+        <p><label>First name:</label><input disabled="disabled" value={{ user.first_name }}></p>
+        <p><label>Last name:</label><input disabled="disabled" value={{ user.last_name }}></p>
+        <p><label>Dob:</label><input disabled="disabled" value={{ profile.dob }}></p>
+        <p><label>Interests:</label><input disabled="disabled" value={{ profile.interests }}></p>
+	</body>
+</html>

@@ -1,0 +1,14 @@
+<html>
+	<body>
+        <a href={% url 'profile' user %}>Profile</a>
+        <h1>Profile</h1>
+        <form action="{% url 'edit' user %}" method="post">
+			{% csrf_token %}
+            {{ user_form.as_p }}
+            {{ profile_form.as_p }}
+            {% if user == current_user %}
+			    <input type="submit" value="Save" />
+            {% endif %}
+		</form>
+	</body>
+</html>
