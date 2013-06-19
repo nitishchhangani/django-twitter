@@ -178,9 +178,9 @@ class ConfirmView(generic.View):
                 if not row.is_active:
                     row.is_active = True
                     row.save()
-                    message = ''.join([row.user1.username, ' is now connected to ', row.user2.username])
+                    message = ' '.join([row.user1.username, 'is now connected to', row.user2.username])
                 else:
-                    message = ''.join([row.user1.username, ' is already connected to ', row.user2.username])
+                    message = ' '.join([row.user1.username, 'is already connected to', row.user2.username])
         else:
             message = 'Invalid confirmation code.'
         return render(request, 'twitter/confirm_reject.html', {
@@ -207,7 +207,7 @@ class ConnectToView(generic.View):
                     subject = current_user.username + ' wants to connect to you'
                     message = ''.join(['Click to confirm: http://127.0.0.1:8000/twitter/confirm/', confirmation_code, '/\n'])
                     message = ''.join([message, 'Click to reject: http://127.0.0.1:8000/twitter/reject/', confirmation_code, '/'])
-                    send_mail(subject, message, 'twitter@project.com',[connect_to.email], fail_silently=False)
+                    send_mail(subject, message, 'twitter@project.com', [connect_to.email], fail_silently=False)
         return HttpResponseRedirect(reverse('connect'))
 
     def code_generator(self, size=50, chars=string.ascii_letters+string.digits):
